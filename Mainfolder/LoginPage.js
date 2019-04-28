@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text, TextInput, Button, ToastAndroid, ActivityIndicator } from 'react-native';
+import { View, Text, TextInput, Button, ToastAndroid } from 'react-native';
 import Firebase from 'react-native-firebase';
 import { StackActions, NavigationActions } from 'react-navigation';
+import Spinner from './Spinner';
 
 export default class LoginPage extends Component {
 
     constructor(props) {
-        super(props);
+        super(props); 
         this.state = {
             email: "",
             password: "",
@@ -51,9 +52,9 @@ export default class LoginPage extends Component {
                     <Text style={{ fontSize: 25, color: "white", textAlign: "center" }}>Login</Text>
                     <TextInput placeholder="Email" placeholderTextColor="white" value={this.state.email} editable={!this.state.loading} style={{ borderBottomColor: "white", borderBottomWidth: 1, color: "white" }} onChangeText={(value) => { this.setState({ email: value }) }} />
                     <TextInput placeholder="Password" placeholderTextColor="white" value={this.state.password} editable={!this.state.loading} style={{ borderBottomColor: "white", borderBottomWidth: 1, color: "white", marginBottom: 10 }} onChangeText={(value) => { this.setState({ password: value }) }} secureTextEntry={true} />
-                    {this.state.loading ? <ActivityIndicator size={50} color="white"/> : <Button title="Login" onPress={this.login} disabled={this.state.loading} />}
+                    {this.state.loading ? <Spinner size={50} color="white"/> : <Button title="Login" onPress={this.login} disabled={this.state.loading} />}
                 </View> 
-            </View>
+            </View> 
         );
     }
 }
