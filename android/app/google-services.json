@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "836659233533",
+    "firebase_url": "https://practicework1.firebaseio.com",
+    "project_id": "practicework1",
+    "storage_bucket": "practicework1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836659233533:android:7feca69067a8bc00",
+        "android_client_info": {
+          "package_name": "com.alishafarman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836659233533-mibc57tglr2mktbdqhofp3n5ppea4ccv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADcF6w1smRoo1rtCT3c0GinbWFnW_tPt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836659233533-mibc57tglr2mktbdqhofp3n5ppea4ccv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
