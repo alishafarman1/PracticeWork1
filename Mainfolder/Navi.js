@@ -19,17 +19,6 @@ const stack=createStackNavigator({
     }
 });
 const drawer = createDrawerNavigator({
-    MainScreen:{
-        screen:MainScreen
-    },
-    screen1:{
-        screen:Profile
-    },
-    screen2:{
-        screen:Newscreen
-    }, 
-    screen3:{
-        screen:Page
-    }
-})
+    MainApp:{screen:stack}
+}) 
  export default createAppContainer(drawer); 
