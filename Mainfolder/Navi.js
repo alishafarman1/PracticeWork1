@@ -3,6 +3,7 @@ import Profile from "./Profile";
 import Newscreen from "./Newscreen";
 import Page from "./Page";
 import MainScreen from "./MainScreen"
+import LoginPage from "./LoginPage";
 
 const stack=createStackNavigator({
     MainScreen:{
@@ -19,6 +20,9 @@ const stack=createStackNavigator({
     }
 });
 const drawer = createDrawerNavigator({
+    LoginPage:{
+        screen:LoginPage
+    },   
     MainApp:{screen:stack}
 }) 
  export default createAppContainer(drawer); 

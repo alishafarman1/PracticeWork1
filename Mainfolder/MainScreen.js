@@ -9,7 +9,7 @@ export default class MainScreen extends Component {
   render() {
     return (
       <View style={{backgroundColor:"yellow", flex:1}}>
-     <BottomTap/>
+     <BottomTap screenProps={{parentNav:this.props.navigation}}/>
     
       </View>
     );
